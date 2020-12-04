@@ -191,8 +191,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\BoardCandidateController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShareholderController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VoteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -272,11 +272,6 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shareholder\Create.cshtml" />
-    <Content Include="Views\Shareholder\Delete.cshtml" />
-    <Content Include="Views\Shareholder\Details.cshtml" />
-    <Content Include="Views\Shareholder\Edit.cshtml" />
-    <Content Include="Views\Shareholder\Index.cshtml" />
     <Content Include="Views\BoardCandidate\Create.cshtml" />
     <Content Include="Views\BoardCandidate\Delete.cshtml" />
     <Content Include="Views\BoardCandidate\Details.cshtml" />
@@ -296,6 +291,11 @@
     <Content Include="Views\Shared\_CandidateForElection.cshtml" />
     <Content Include="Views\Vote\VoteEdit.cshtml" />
     <Content Include="Views\Shared\_ElectedCandidates.cshtml" />
+    <Content Include="Views\Shareholder\Create.cshtml" />
+    <Content Include="Views\Shareholder\Delete.cshtml" />
+    <Content Include="Views\Shareholder\Details.cshtml" />
+    <Content Include="Views\Shareholder\Edit.cshtml" />
+    <Content Include="Views\Shareholder\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

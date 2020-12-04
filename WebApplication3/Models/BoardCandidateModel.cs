@@ -11,6 +11,6 @@ namespace WebApplication3.Models
         public int CandidateNo { get; set; }
         public string CandidateName { get; set; }
         public bool selected { get; set; }
-        public virtual ICollection<Shareholder> ShareholderVotes { get; set; }
+        public virtual ICollection<String> VotedShareholderIDs { get; set; }
     }
 }

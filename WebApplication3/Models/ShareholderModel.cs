@@ -26,6 +26,13 @@ namespace WebApplication3.Models
         public string AttendanceRegisterer { get; set; }
         public bool Attended { get; set; }
         public bool Voted { get; set; }
-        public virtual ICollection<BoardCandidate> ElectedCandidates {get; set;}
+       // public virtual ICollection<BoardCandidate> ElectedCandidates {get; set;}
+        public virtual List<String> ElectedCandidateIDs { get; set; }
+
+        public Shareholder()
+        {
+            ElectedCandidateIDs = new List<String>();
+        }
+
     }
 }

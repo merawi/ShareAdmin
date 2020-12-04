@@ -4,13 +4,15 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication3.Models;
 
+
 namespace WebApplication3.Controllers
 {
-    [Authorize(Roles="user,dmin")]
+    [Authorize(Roles="user,admin")]
     public class VoteController : Controller
     {
         private ShareholdersAdminDB db = new ShareholdersAdminDB();
@@ -106,14 +108,14 @@ namespace WebApplication3.Controllers
 
 
         [HttpPost]
-        public ActionResult VoteEditSave(IEnumerable<BoardCandidate> Candidates)
+        public string VoteEditSave(IEnumerable<BoardCandidate> Candidates)
         {
 
             Shareholder shareholder = db.Shareholders.Find(int.Parse(Request.Form["ShareholderId"]));
 
             foreach(BoardCandidate b in Candidates)
             {
-                if (b.selected) shareholder.ElectedCandidates.Add(b);
+                if (b.selected) shareholder.ElectedCandidateIDs.Add(b.CandidateNo.ToString());
             }
 
             shareholder.VoteRegisterer = User.Identity.Name;
@@ -121,10 +123,17 @@ namespace WebApplication3.Controllers
             db.Entry(shareholder).State = EntityState.Modified;
             db.SaveChanges();
 
+            StringBuilder candNames = new StringBuilder();
+           
+           foreach(string s in shareholder.ElectedCandidateIDs)
+           {
+               candNames.Append(s);
+           }
 
-            //return Candidates.Count(x => x.selected).ToString() + "--" + shareholder.ShareholderNameAmh; 
 
-            return RedirectToAction("Index");
+           return Candidates.Count(x => x.selected).ToString() + "--" + shareholder.ShareholderNameAmh + candNames; 
+
+            //return RedirectToAction("Index");
         }
 
 

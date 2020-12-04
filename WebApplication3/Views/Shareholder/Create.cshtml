@@ -57,10 +57,18 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SerialNumbersList, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.VoteRegisterer, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SerialNumbersList)
-                @Html.ValidationMessageFor(model => model.SerialNumbersList)
+                @Html.EditorFor(model => model.VoteRegisterer)
+                @Html.ValidationMessageFor(model => model.VoteRegisterer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AttendanceRegisterer, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AttendanceRegisterer)
+                @Html.ValidationMessageFor(model => model.AttendanceRegisterer)
             </div>
         </div>
 
