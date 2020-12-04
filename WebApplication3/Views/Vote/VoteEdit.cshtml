@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication3.Models.BoardCandidate>
+
+<table>
+    <tr>
+        <td>Shareholder ID: </td>
+        <td>@ViewBag.ShareholderID</td>
+    </tr>
+    <tr>
+        <td>Shareholder Name</td>
+        <td>@ViewBag.ShareholderName</td>
+    </tr>
+    <tr>
+        <td>የባለድርሻ ስም፡ </td>
+        <td>@ViewBag.ShareholderNameAmh</td>
+    </tr>
+    <tr>
+        <td>Shareholder Name</td>
+        <td>@ViewBag.ShareholderName</td>
+    </tr>
+
+</table>
+
+@using (Html.BeginForm("VoteEditSave","Vote",FormMethod.Post)) { 
+
+    <input type="hidden" value="@ViewBag.id" name="ShareholderId" />
+    
+    @Html.EditorForModel()
+    
+    <input type="Submit" value="Register Vote" />
+    
+}

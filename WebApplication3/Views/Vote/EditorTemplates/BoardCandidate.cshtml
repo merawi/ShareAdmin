@@ -1,0 +1,8 @@
+﻿@model WebApplication3.Models.BoardCandidate
+
+@Html.HiddenFor(x=>x.CandidateNo)
+@Html.HiddenFor(x=>x.CandidateName)
+
+@Html.CheckBoxFor(x=>x.selected)
+@Html.DisplayFor(x=>x.CandidateNo)
+@Html.DisplayFor(x=>x.CandidateName)

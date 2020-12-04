@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\DGBHost001</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/30/2020 16:13:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="bin/WebApplication3.dll">
+      <publishTime>12/02/2020 14:16:16</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/30/2020 16:13:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/30/2020 16:13:27</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/30/2020 16:13:24</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveAccountPartial.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/BoardCandidate/Create.cshtml">
+      <publishTime>12/02/2020 14:03:14</publishTime>
+    </File>
+    <File Include="Views/BoardCandidate/Delete.cshtml">
+      <publishTime>12/02/2020 11:17:38</publishTime>
+    </File>
+    <File Include="Views/BoardCandidate/Details.cshtml">
+      <publishTime>12/02/2020 11:17:38</publishTime>
+    </File>
+    <File Include="Views/BoardCandidate/Edit.cshtml">
+      <publishTime>12/02/2020 11:17:39</publishTime>
+    </File>
+    <File Include="Views/BoardCandidate/Index.cshtml">
+      <publishTime>12/02/2020 11:17:39</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/02/2020 11:18:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>11/30/2020 16:13:25</publishTime>
+    </File>
+    <File Include="Views/Shareholder/Create.cshtml">
+      <publishTime>12/01/2020 19:23:34</publishTime>
+    </File>
+    <File Include="Views/Shareholder/Delete.cshtml">
+      <publishTime>12/01/2020 19:23:35</publishTime>
+    </File>
+    <File Include="Views/Shareholder/Details.cshtml">
+      <publishTime>12/01/2020 19:23:35</publishTime>
+    </File>
+    <File Include="Views/Shareholder/Edit.cshtml">
+      <publishTime>12/01/2020 19:23:35</publishTime>
+    </File>
+    <File Include="Views/Shareholder/Index.cshtml">
+      <publishTime>12/01/2020 22:21:24</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/30/2020 16:13:21</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/02/2020 14:15:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

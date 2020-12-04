@@ -1,0 +1,62 @@
+﻿@model WebApplication3.Models.Shareholder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shareholder</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShareholderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShareholderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShareholderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShareholderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NSharesSubscribed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NSharesSubscribed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NSharesPaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NSharesPaid)
+        </dd>
+
+    </dl>
+</div>
+
+<br /><br />
+
+
+<h1>Candidates @Model.ShareholderName Voted For:</h1>
+
+@Html.Partial("_ElectedCandidates",Model.ElectedCandidates)
+
+<hr />
+<h2>Vote encoded by: @Model.VoteRegisterer</h2>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

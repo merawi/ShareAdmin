@@ -1,0 +1,88 @@
+﻿@model WebApplication3.Models.Shareholder
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Shareholder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShareholderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShareholderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShareholderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShareholderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShareholderNameAmh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShareholderNameAmh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NSharesSubscribed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NSharesSubscribed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NSharesPaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NSharesPaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerialNumbersList)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerialNumbersList)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attended)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attended)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Voted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Voted)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

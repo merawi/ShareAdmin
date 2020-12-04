@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WebApplication3.Models.Shareholder>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="get">
+
+    <input type="Search" name="searchTerm" />
+    <input type="submit" value="Search by Name" />
+
+</form>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShareholderID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShareholderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NSharesSubscribed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NSharesPaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerialNumbersList)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Attended)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Voted)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShareholderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShareholderName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NSharesSubscribed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NSharesPaid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerialNumbersList)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Attended)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Voted)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
